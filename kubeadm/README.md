@@ -1,3 +1,6 @@
+# To create depoyment
+kubectl create namespace <your-namespace-name>
+
 # To describe details of a pod
 kubectl describe pods/<podName> -n <namespaceName>
 
@@ -21,3 +24,6 @@ kubectl scale deployment/nginx-deployment -n nginx --replicas=1
 
 # To update or rollout update of nginx to lower version without stopping pods
 kubectl set image deployment/nginx-deployment -n nginx nginx=nginx:1.27.3
+
+# To get more details about pods
+kubectl get pods -n nginx -o wide
