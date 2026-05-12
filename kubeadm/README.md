@@ -1,4 +1,4 @@
-# To create depoyment
+# To create nameSpace
 kubectl create namespace <your-namespace-name>
 
 # To describe details of a pod
@@ -27,3 +27,9 @@ kubectl set image deployment/nginx-deployment -n nginx nginx=nginx:1.27.3
 
 # To get more details about pods
 kubectl get pods -n nginx -o wide
+
+## To apply replicasets
+kubectl apply -f replicasets.yml
+
+# To get replicasets
+kubectl get replicasets -n nginx
