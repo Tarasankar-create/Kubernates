@@ -1,4 +1,4 @@
-Kind: Job
+kind: Job
 apiVersion: batch/v1
 metadata:
   name: demo-job
@@ -12,9 +12,9 @@ spec:
       labels:
         app: batch-task
     spec:
-    containers:
-      - name: batch-container
-        image: busybox:latest\
-        command: ["sh","-c", "echo Hello world"]
-    restartPolicy: Never
+      containers:
+        - name: batch-container
+          image: busybox:latest
+          command: ["sh","-c", "echo Hello world"]
+      restartPolicy: Never
   
