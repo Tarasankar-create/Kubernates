@@ -33,3 +33,12 @@ kubectl apply -f replicasets.yml
 
 # To get replicasets
 kubectl get replicasets -n nginx
+
+# To get daemonsets
+kubectl get daemonsets -n nginx
+
+# To get deployment
+kubectl get deployment -n nginx
+
+# To get job
+kubectl get job -n nginx
