@@ -34,11 +34,11 @@ kubectl port-forward -n monitoring svc/monitoring-grafana 3000:80 --address=0.0.
 ```
 # Get Grafana password
 
-# Username:
+## Username:
 ``` bash
 admin
 ```
-# Get the password:
+## Get the password:
 ``` bash
 kubectl get secret -n monitoring monitoring-grafana \
   -o jsonpath="{.data.admin-password}" | base64 -d
